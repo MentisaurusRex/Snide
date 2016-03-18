@@ -1,8 +1,8 @@
 #include "GamePlayScreen.h"
 #include <iostream>
 #include <SDL\SDL.h>
-#include <Snicker\IMainGame.h>
-#include <Snicker\ResourceManager.h>
+#include <SnickerSource\IMainGame.h>
+#include <SnickerSource\ResourceManager.h>
 
 GamePlayScreen::GamePlayScreen(Snicker::Window* window) : m_window(window){
 }
@@ -32,14 +32,14 @@ void GamePlayScreen::onEntry() {
 
 	//Shader init
 	//Compile our color shader
-	m_textureProgram.compileShaders("Shaders/colorShading.vert", "Shaders/colorShading.frag");
+	m_textureProgram.compileShaders("Source/Shaders/colorShading.vert", "Source/Shaders/colorShading.frag");
 	m_textureProgram.addAttribute("vertexPosition");
 	m_textureProgram.addAttribute("vertexColor");
 	m_textureProgram.addAttribute("vertexUV");
 	m_textureProgram.linkShaders();
 
 	//Load the Texture
-	m_playerTexture = Snicker::ResourceManager::getTexture("Textures/Agromus.png");	
+	m_playerTexture = Snicker::ResourceManager::getTexture("Source/Textures/Agromus.png");	
 	
 	//Init camera
 	m_camera.init(m_window->getScreenWidth(), m_window->getScreenHeight());

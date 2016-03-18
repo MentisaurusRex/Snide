@@ -1,6 +1,6 @@
 #include "Map1.h"
-#include <Snicker\ResourceManager.h>
-#include <Snicker\GLTexture.h>
+#include <SnickerSource\ResourceManager.h>
+#include <SnickerSource\GLTexture.h>
 
 Map1::Map1()
 {
@@ -12,9 +12,9 @@ Map1::~Map1()
 }
 
 void Map1::load() {
-	Snicker::GLTexture m_grassTexture = Snicker::ResourceManager::getTexture("Textures/Shrub_1.png");
-	Snicker::GLTexture m_dirtTexture = Snicker::ResourceManager::getTexture("Textures/Dirt.png");
-	Snicker::GLTexture m_fenceTexture = Snicker::ResourceManager::getTexture("Textures/Fence.png");
+	Snicker::GLTexture m_grassTexture = Snicker::ResourceManager::getTexture("Source/Textures/Shrub_1.png");
+	Snicker::GLTexture m_dirtTexture = Snicker::ResourceManager::getTexture("Source/Textures/Dirt.png");
+	Snicker::GLTexture m_fenceTexture = Snicker::ResourceManager::getTexture("Source/Textures/Fence.png");
 	//Init test Terrain
 	for (int i = 0; i < 9; i++) {
 		for (int j = 0; j < 13; j++) {

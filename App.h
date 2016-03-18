@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Snicker\IMainGame.h>
+#include <SnickerSource\IMainGame.h>
 #include "GamePlayScreen.h"
 
 class App : public Snicker::IMainGame{

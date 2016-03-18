@@ -1,9 +1,9 @@
 #pragma once
 #include <glm\glm.hpp>
-#include <Snicker\Vertex.h>
-#include <Snicker\SpriteBatch.h>
-#include <Snicker\GLTexture.h>
-#include <Snicker\InputManager.h>
+#include <SnickerSource\Vertex.h>
+#include <SnickerSource\SpriteBatch.h>
+#include <SnickerSource\GLTexture.h>
+#include <SnickerSource\InputManager.h>
 class Terrain
 {
 public:

@@ -1,9 +1,9 @@
 #include "MainGame.h"
-#include <Snicker\SnickerErrors.h>
+#include <SnickerSource\SnickerErrors.h>
 #include <iostream>
 #include <string>
-#include <Snicker\Snicker.h>
-#include <Snicker\ResourceManager.h>
+#include <SnickerSource\Snicker.h>
+#include <SnickerSource\ResourceManager.h>
 
 #include <algorithm>
 
@@ -48,7 +48,7 @@ void MainGame::initSystems() {
 }
 
 void MainGame::initShaders() {
-	_colorProgram.compileShaders("Shaders/colorShading.vert", "Shaders/colorShading.frag");
+	_colorProgram.compileShaders("Snide/Source/Shaders/colorShading.vert", "Snide/Source/Shaders/colorShading.frag");
 	_colorProgram.addAttribute("vertexPosition");
 	_colorProgram.addAttribute("vertexColor");
 	_colorProgram.addAttribute("vertexUV");

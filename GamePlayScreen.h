@@ -1,11 +1,11 @@
 #pragma once
 
-#include <Snicker\IGameScreen.h>
-#include <Snicker\SpriteBatch.h>
-#include <Snicker\GLSLProgram.h>
-#include <Snicker\Camera2D.h>
-#include <Snicker\GLTexture.h>
-#include <Snicker\Window.h>
+#include <SnickerSource\IGameScreen.h>
+#include <SnickerSource\SpriteBatch.h>
+#include <SnickerSource\GLSLProgram.h>
+#include <SnickerSource\Camera2D.h>
+#include <SnickerSource\GLTexture.h>
+#include <SnickerSource\Window.h>
 #include "Player.h"
 #include "Map1.h"
 

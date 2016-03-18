@@ -3,16 +3,16 @@
 #include <GL\glew.h>
 #include <vector>
 
-#include <Snicker\Sprite.h>
-#include <Snicker\GLSLProgram.h>
-#include <Snicker\GLTexture.h>
-#include <Snicker\Window.h>
-#include <Snicker\Camera2D.h>
-#include <Snicker\SpriteBatch.h>
-#include <Snicker\InputManager.h>
-#include <Snicker\Timing.h>
-#include <Snicker\SpriteFont.h>
-#include <Snicker\AudioEngine.h>
+#include <SnickerSource\Sprite.h>
+#include <SnickerSource\GLSLProgram.h>
+#include <SnickerSource\GLTexture.h>
+#include <SnickerSource\Window.h>
+#include <SnickerSource\Camera2D.h>
+#include <SnickerSource\SpriteBatch.h>
+#include <SnickerSource\InputManager.h>
+#include <SnickerSource\Timing.h>
+#include <SnickerSource\SpriteFont.h>
+#include <SnickerSource\AudioEngine.h>
 
 enum class GameState { PLAY, EXIT };
 

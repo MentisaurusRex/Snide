@@ -1,5 +1,5 @@
 #include "MainGame.h"
-#include <Snicker\IMainGame.h>
+#include <SnickerSource\IMainGame.h>
 #include "App.h"
 int main(int argc, char** argv) {
 	//MainGame mainGame;

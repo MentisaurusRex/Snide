@@ -1,5 +1,5 @@
 #include "App.h"
-#include <Snicker\ScreenList.h>
+#include <SnickerSource\ScreenList.h>
 
 
 App::App()
