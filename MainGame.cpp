@@ -22,7 +22,7 @@ void MainGame::run() {
 	initSystems();
 
 	Snicker::Music music = m_audioEngine.loadMusic("Sounds/west-winds.ogg");
-	music.play(-1);
+	music.play(100);
 	gameLoop();
 }
 

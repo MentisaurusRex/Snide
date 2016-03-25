@@ -1,6 +1,8 @@
 #include "Terrain.h"
 
+Terrain::Terrain() {
 
+}
 
 Terrain::Terrain(const glm::vec2& position, const glm::vec2& dimensions, const glm::vec4& uv, float rowNum, Snicker::GLTexture texture, Snicker::ColorRGBA8 color)
 {

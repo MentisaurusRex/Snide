@@ -8,6 +8,7 @@
 #include <SnickerSource\Window.h>
 #include "Player.h"
 #include "Map1.h"
+#include "MenuUI.h"
 
 class GamePlayScreen : public Snicker::IGameScreen
 {
@@ -30,12 +31,19 @@ public:
 	virtual void update() override;
 	virtual void draw() override;
 
+	void drawUI();
+
+
 private:
 	void checkInput();
 
-	Snicker::SpriteBatch m_spriteBatch;
-	Snicker::GLSLProgram m_textureProgram;
-	Snicker::Camera2D m_camera;
+	Snicker::SpriteBatch m_worldSpriteBatch;
+	Snicker::SpriteBatch m_uiSpriteBatch;
+
+	Snicker::Camera2D m_uiCamera; //heads up display
+	Snicker::Camera2D m_worldCamera;
+
+	Snicker::GLSLProgram m_textureProgram;	
 	Snicker::GLTexture m_playerTexture;
 	Snicker::GLTexture m_grassTexture;
 	Snicker::Window* m_window;
@@ -43,6 +51,10 @@ private:
 	Player m_player;
 	
 	Map1 m_map;
+	MenuUI m_ui;
+
+	//Temporary
+	Snicker::SpriteFont* _spriteFont;
 
 	
 };
