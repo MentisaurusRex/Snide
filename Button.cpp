@@ -42,8 +42,8 @@ bool Button::isMouseInBounds(const glm::vec2 mouse_position, const glm::vec2 ui_
 
 	std::cout << "Button X: " << (ui_position.x + m_position.x) << " Button Y: " << (ui_position.y + m_position.y) << std::endl;
 
-	if (mouse_position.x >= (ui_position.x + m_position.x) && mouse_position.x <= (ui_position.x + m_dimensions.x)) {
-		if (mouse_position.y >= (ui_position.y + m_position.y) && mouse_position.y <= (ui_position.y + m_dimensions.y)) {
+	if (mouse_position.x <= (ui_position.x + m_dimensions.x) && mouse_position.x >= (ui_position.x)) {
+		if (mouse_position.y <= (ui_position.y - m_position.y) && mouse_position.y >= (ui_position.y)) {
 			isInBounds = true;
 		}
 	}

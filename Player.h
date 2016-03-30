@@ -16,6 +16,10 @@ public:
 
 	void update(Snicker::InputManager& inputManager);
 
+	glm::vec2 getPosition() {
+		return m_position;
+	}
+
 	void setRowNum(float rowNum) { m_rowNum = rowNum; }
 	float getGetNum() { return m_rowNum; }
 

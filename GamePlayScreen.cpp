@@ -52,7 +52,7 @@ void GamePlayScreen::onEntry() {
 	//m_uiCamera.setPosition(glm::vec2((m_window->getScreenWidth() / 2.0) - 280, -(m_window->getScreenHeight() / 2) + 128));
 
 	//Init UI
-	m_ui.init(0, 0, 50, 200, "Source/Textures/display.png");
+	m_ui.init(0, 0, 200, 400, "Source/Textures/display.png");
 
 	//Init Map
 	m_map.load();
@@ -73,6 +73,7 @@ void GamePlayScreen::onExit() {
 }
 
 void GamePlayScreen::update() {
+	m_worldCamera.setPosition(m_player.getPosition());
 	m_worldCamera.update();
 	m_uiCamera.update();
 	checkInput();
